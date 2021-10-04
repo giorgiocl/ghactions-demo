@@ -11,4 +11,4 @@ jobs:
         with:
           node-version: 6
       - name: Check new version
-        run: node -v
+        run: node -vs
