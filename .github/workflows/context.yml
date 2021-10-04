@@ -13,7 +13,7 @@ jobs:
 
   one:
     runs-on: ubuntu-latest
-    if: gihub.even_name == 'push'
+    if: github.even_name == 'push'
     steps:
       - name: Dump GitHub context
         env:
