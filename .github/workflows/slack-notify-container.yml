@@ -1,0 +1,12 @@
+name: Sent slack notification
+on: push
+
+jobs:
+  slack-steps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send a slack message
+        uses: docker://technosophos/slack-notify
+        env: 
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK}}
+          SLACK_MESSAGE: "Hello world to slack"
