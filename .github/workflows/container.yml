@@ -17,6 +17,10 @@ jobs:
       image: node:13.5.0-alpine3.10
     steps:
       - name: Post a user
-        run: "curl -X POST http://localhost:3001/api/user -H 'Content-Type: application/json' -d '{\"username\": \"giorgio\", \"address\": \"gd\"}'"
+        run: |
+          |
+          apk add curl
+          apk add bash
+          "curl -X POST http://localhost:3001/api/user -H 'Content-Type: application/json' -d '{\"username\": \"giorgio\", \"address\": \"gd\"}'"
       - name: Get users
         run: curl http://localhost:3001/api/users
