@@ -9,4 +9,4 @@ jobs:
         uses: docker://technosophos/slack-notify
         env: 
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK}}
-          SLACK_MESSAGE: "Hello world to slack"
+          SLACK_MESSAGE: "This is a new notification. Have a nice day"
