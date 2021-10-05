@@ -1,4 +1,4 @@
-name: container
+name: Container Deployment
 on: push
 
 jobs:
